@@ -8,6 +8,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+html{
+  font-size: 1.125 em;/** 16px =1em;18px=1.125em */
+  line-height: 1;
+  font-family: 
+}
 h1 {
   color: blue;
 }

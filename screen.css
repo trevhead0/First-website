@@ -8,27 +8,47 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
-html{
-  font-size: 1.125em;/* 16px =1em;18px=1.125em */
-  line-height: 1.22em;
-  font-family:
-}
+/*
+ Used by: Karl Stolley
+ 1em = 18px;
+ 1 lead = 23;
+ Modular scale (golden section):https://www.modularscale.com/?18&px&1.277
+*/
 
-p{
-  padding-bottom: .61em;
+html {
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.277em; /* 23px / 18px = 1.277em... */
+  background-image: url(22px-baseline.png);
+  padding: 1.277em 1em;
 }
-h1,h2,h3,h4,h5,nav,ul,ol{
-  padding-bottom: 1em;
-}
-h1{
-  font-size: 2em;
-  font-weight: bolder;
-}
-h2{
-  font-size: 1.5em;
+h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
 }
-h3{
-  font-size: 1.3em;
-  font-weight: 550;
+h1{
+  font-size:4.236em; /*76.244px / 18 px = 4.236...*/
+  line-height:1.309em /*114.366 / 76.244 = 1.5*/
+}
+h2 {
+  font-size: 2.618em; /* 47.123 / 18 = 2.25 */
+  line-height: 1.309em; /* 61.685 / 47.123 = 1.309 */
+}
+h3 {
+  font-size: 1.618em; /* 29.124 / 18 = 1.618 */
+  line-height: 1.307em; /* 38.0655 / 29.124 = 1.307... */
+  padding-bottom: 0.4074074074em; /* 11 / 27 = 0.4074074074 */
+}
+
+p {
+  padding-bottom: 1.277em; /* 23 / 18px = 1.277... */
+}
+
+ul {
+  padding: 0 0 0.6111em 1.277em;
+  list-style-type:circle;
+}
+ol{
+  list-style-type: none;
+}
+li {
+  padding-bottom: 0.6111em; /* 11 / 18 = 0.6111 */
 }

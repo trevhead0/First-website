@@ -17,8 +17,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
+  font-family: 'K2D', sans-serif;
   line-height: 1.277em; /* 23px / 18px = 1.277em... */
-  background-image: url(22px-baseline.png);
+  background-color: #D1B894;
   padding: 1.277em 1em;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -52,6 +53,7 @@ ol{
 li {
   padding-bottom: 0.6111em; /* 11 / 18 = 0.6111 */
 }
-small{
-  font-size: small;
+img{
+  display:block;
+  max-width: 100%;
 }

@@ -47,6 +47,7 @@ ul {
   padding: 0 0 0.6111em 1.277em;
   list-style-type:circle;
 }
+
 ol{
   list-style-type: none;
 }
@@ -56,4 +57,11 @@ li {
 img{
   display:block;
   max-width: 100%;
+}
+
+#skills{
+  list-style-type: square;
+}
+#experience{
+  list-style-type: none;
 }

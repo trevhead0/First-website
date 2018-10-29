@@ -30,15 +30,18 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
 }
 h1{
-  font-size:4.236em; /*76.244px / 18 px = 4.236...*/
+  /*font-size:4.236em; /*76.244px / 18 px = 4.236...*/
+  text-align: center;
+  font-size: 2.618em; /* 47.123 / 18 = 2.25 */
   line-height:1.309em /*114.366 / 76.244 = 1.5*/
 }
 h2 {
-  font-size: 2.618em; /* 47.123 / 18 = 2.25 */
+  /*font-size: 2.618em; /* 47.123 / 18 = 2.25 */
+  font-size: 1.618em; /* 29.124 / 18 = 1.618 */
   line-height: 1.309em; /* 61.685 / 47.123 = 1.309 */
 }
 h3 {
-  font-size: 1.618em; /* 29.124 / 18 = 1.618 */
+  /*font-size: 1.618em; /* 29.124 / 18 = 1.618 */
   line-height: 1.307em; /* 38.0655 / 29.124 = 1.307... */
   padding-bottom: 0.4074074074em; /* 11 / 27 = 0.4074074074 */
 }
@@ -58,9 +61,19 @@ ol{
 li {
   padding-bottom: 0.6111em; /* 11 / 18 = 0.6111 */
 }
+figcaption{
+  text-align: center;
+}
 img{
   display:block;
-  max-width: 100%;
+  margin: auto;
+  max-width: 90vh;
+  max-height:80vh;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 /* ========== Layout ========== */
 /* Layout (id selectors; width/height, position, flexbox, grid)*/
@@ -75,3 +88,34 @@ img{
 
 /* ========== State ========== */
 /* State (repeat the structure above; media queries, JavaScript-dependent styles) */
+
+@media screen and (min-width: 600px) {
+  .family_member{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    float:center;
+    justify-content: center;
+    /*background-color: red;*/
+  }
+  .family_image{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /*background-color: orange;*/
+  }
+  .family_name{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /*background-color: blue;*/
+  }
+  .family_updates{
+    grid-column-start: 2;
+      grid-column-end: 3;
+      /*background-color: green;*/
+  }
+  .family_details{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /*background-color: purple;*/
+  }
+}

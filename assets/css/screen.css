@@ -90,7 +90,7 @@ header{
 /* State (repeat the structure above; media queries, JavaScript-dependent styles) */
 
 @media screen and (min-width: 600px) {
-  .family_member{
+  .family-member{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
@@ -98,22 +98,22 @@ header{
     justify-content: center;
     /*background-color: red;*/
   }
-  .family_image{
+  .family-image{
     grid-column-start: 2;
     grid-column-end: 4;
     /*background-color: orange;*/
   }
-  .family_name{
+  .family-name{
     grid-column-start: 2;
     grid-column-end: 4;
     /*background-color: blue;*/
   }
-  .family_updates{
+  .family-updates{
     grid-column-start: 2;
       grid-column-end: 3;
       /*background-color: green;*/
   }
-  .family_details{
+  .family-details{
     grid-column-start: 3;
     grid-column-end: 4;
     /*background-color: purple;*/

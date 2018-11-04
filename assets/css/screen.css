@@ -64,17 +64,13 @@ li {
 figcaption{
   text-align: center;
 }
-img{
-  display:block;
-  margin: auto;
-  max-width: 90vh;
-  max-height:80vh;
+audio,
+img,
+video {
+  display: block;
+  max-width: 100%;
 }
-header{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+
 /* ========== Layout ========== */
 /* Layout (id selectors; width/height, position, flexbox, grid)*/
 #skills{
@@ -83,6 +79,15 @@ header{
 #experience{
   list-style-type: none;
 }
+#header{
+  background:rgba(211,211,211, 0.5)/*silver slightly transparent*/;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* ========== Module ========== */
 /* Module/Modular Section (class or descedent selectors; repeating specific styles) */
 
@@ -92,30 +97,21 @@ header{
 @media screen and (min-width: 600px) {
   .family-member{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
     float:center;
     justify-content: center;
     /*background-color: red;*/
   }
-  .family-image{
-    grid-column-start: 2;
-    grid-column-end: 4;
+  .family-image,.family-name{
+    grid-column-start: 1;
+    grid-column-end: 3;
     /*background-color: orange;*/
   }
-  .family-name{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    /*background-color: blue;*/
-  }
-  .family-updates{
-    grid-column-start: 2;
-      grid-column-end: 3;
-      /*background-color: green;*/
-  }
-  .family-details{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    /*background-color: purple;*/
+}
+@media screen and (min-width: 700px){
+  html{
+    display: grid;
+    max-width: 650px;
   }
 }

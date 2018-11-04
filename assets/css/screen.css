@@ -24,7 +24,7 @@ html {
   font-family: 'K2D', sans-serif;
   line-height: 1.277em; /* 23px / 18px = 1.277em... */
   background-color: #D1B894;
-  padding: 1.277em 1em;
+  padding: 1.277em 1em /* 23 / 18px = 1.277... half a line space inbetween*/;
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
@@ -111,7 +111,12 @@ video {
 }
 @media screen and (min-width: 700px){
   html{
-    display: grid;
     max-width: 650px;
+    padding-left: 5em;
+  }
+}
+@media screen and (min-width: 900px){
+  html{
+    padding-left: 10em;
   }
 }

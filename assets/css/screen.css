@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 h1 {
+  /*Changed Smaller size for smaller browser, might enlarge for larger screens*/
   /*font-size:4.236em; /*76.244px / 18 px = 4.236...*/
   text-align: center;
   font-size: 2.618em; /* 47.123 / 18 = 2.25 */
@@ -86,21 +87,29 @@ video {
 
 /* ========== Layout ========== */
 /* Layout (id selectors; width/height, position, flexbox, grid)*/
-#skills {
-  list-style-type: square;
-}
+
 #header {
   background: rgba(211,211,211, 0.5)/*silver slightly transparent*/;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
 }
-
-
+#navigation{
+  align-self: flex-end;
+}
+#skills {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 1em;
+  grid-template-rows: auto;
+  list-style-type: square;
+}
 /* ========== Module ========== */
 /* Module/Modular Section (class or descedent selectors; repeating specific styles) */
-
+.location{
+  padding-bottom: 2em/**/;
+}
 .jobtitle, .school {
   font-weight: 600;
 }
@@ -114,8 +123,8 @@ video {
   .family-member {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid column-gap: 1em;
     grid-template-rows: auto;
-    grid column-gap: 2em;
     float: center;
     justify-content: center;
     /*background-color: red;*/

@@ -40,9 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   /*Changed Smaller size for smaller browser, might enlarge for larger screens*/
-  /*font-size:4.236em; /*76.244px / 18 px = 4.236...*/
+  font-size:4.236em; /*76.244px / 18 px = 4.236...*/
   text-align: center;
-  font-size: 2.618em; /* 47.123 / 18 = 2.25 */
+  /*font-size: 2.618em; /* 47.123 / 18 = 2.25 */
   line-height: 1.309em /*114.366 / 76.244 = 1.5*/
 }
 h2 {
@@ -105,6 +105,18 @@ video {
   grid-template-rows: auto;
   list-style-type: square;
 }
+/*This is side project inside of project, meant to be a fun lil easter egg*/
+#chessboard{
+  background-color: red;
+  padding: 1em 1em;
+  max-height: 50vw;
+  max-width: 50vw;
+  border-color: black;
+  border-width: thick;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(8,1fr);
+}
 /* ========== Module ========== */
 /* Module/Modular Section (class or descedent selectors; repeating specific styles) */
 .location{
@@ -123,9 +135,8 @@ video {
   .family-member {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid column-gap: 1em;
+    grid-column-gap: 1em;
     grid-template-rows: auto;
-    float: center;
     justify-content: center;
     /*background-color: red;*/
   }

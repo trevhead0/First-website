@@ -32,8 +32,9 @@ html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   font-family: "K2D", sans-serif;
   line-height: 1.277em; /* 23px / 18px = 1.277em... */
-  background-color: #D1B894;
+  background-color: #272727;
   padding: 1.277em 1em /* 23 / 18px = 1.277... half a line space inbetween*/;
+  color:#ff652f;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -42,6 +43,7 @@ h1 {
   /*Changed Smaller size for smaller browser, might enlarge for larger screens*/
   font-size:4.236em; /*76.244px / 18 px = 4.236...*/
   text-align: center;
+  text-decoration: underline;
   /*font-size: 2.618em; /* 47.123 / 18 = 2.25 */
   line-height: 1.309em /*114.366 / 76.244 = 1.5*/
 }
@@ -49,6 +51,7 @@ h2 {
   /*font-size: 2.618em; /* 47.123 / 18 = 2.25 */
   font-size: 1.618em; /* 29.124 / 18 = 1.618 */
   line-height: 1.309em; /* 61.685 / 47.123 = 1.309 */
+  color:#84ceeb;
 }
 h3 {
   /*font-size: 1.618em; /* 29.124 / 18 = 1.618 */
@@ -60,6 +63,9 @@ p {
   padding-bottom: 1.277em; /* 23 / 18px = 1.277... */
 }
 
+header,footer{
+  background: #747474;
+}
 ul, ol {
   padding-left: 0;
 }
@@ -74,6 +80,7 @@ ol {
 }
 li {
   padding-bottom: 0.6111em; /* 11 / 18 = 0.6111 */
+  margin:.6111em;
 }
 figcaption {
   text-align: center;
@@ -85,11 +92,20 @@ video {
   max-width: 100%;
 }
 
+a:link{
+  color:#14a76c;
+}
+a:visited{
+  color:#ffe400;
+}
 /* ========== Layout ========== */
 /* Layout (id selectors; width/height, position, flexbox, grid)*/
 
+#resume-name{
+  font-size:4.236em; /*76.244px / 18 px = 4.236...*/
+}
+
 #header {
-  background: rgba(211,211,211, 0.5)/*silver slightly transparent*/;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -97,6 +113,14 @@ video {
 }
 #navigation{
   align-self: flex-end;
+}
+#navigation a:hover{
+  background-color: green;
+}
+#contact{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 #skills {
   display: grid;
@@ -122,11 +146,17 @@ video {
 .location{
   padding-bottom: 2em/**/;
 }
+
 .jobtitle, .school {
   font-weight: 600;
 }
+
 .resume-section {
   text-decoration: underline;
+}
+
+.experience-description li{
+  padding:.6111111em;
 }
 /* ========== State ========== */
 /* State (repeat the structure above; media queries, JavaScript-dependent styles) */
@@ -147,14 +177,14 @@ video {
   }
 }
 @media screen and (min-width: 700px/*700px/ 18px = 38.8888em*/) {
-  html {
+  ol, #header{
     max-width: 38.8888em ;
     margin: auto;
   }
 }
 
 @media screen and (min-width: 900px/*900px / 18px =50em*/) {
-  html {
-    max-width: 50em/*I like this as max width;*/
+  ol, #header{
+    max-width: 50em/*I like this as max width due to text lining up;*/
   }
 }

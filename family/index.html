@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no js">
+<html lang="en" id="family-page" class="nojs">
   <head>
     <title>The Loveday Family</title>
     <meta charset="utf-8" />
@@ -10,7 +10,7 @@
   <body id="body">
     <header><!--Double header for formating-->
       <header id="header">
-        <h1 id="page">The Loveday Family</h1>
+        <h1>The Loveday Family</h1>
         <nav id="navigation">
           <a href="../">Home</a>
           <a href="">Family</a>
@@ -20,17 +20,17 @@
     </header>
     <!--h1 will be for Names/h2 for Relation/ol for description/ p for discussion-->
     <!-- //Working on// needs more revision -->
-    <section id="photo-gallery">
-      <h2>Photo Gallery TODO:</h2>
-    </section>
     <ol id="family" class="family-member">
+
       <li class="family-image">
-        <figure>
-          <img src="../assets/images/family" alt="My favorite family picture" />
-          <figcaption>
-            My Favorite Family Picture
-          </figcaption>
-        </figure>
+        <section id="photo-gallery">
+          <figure class ="focus">
+            <img src="../assets/images/family" alt="My favorite family picture" />
+            <figcaption>
+              My Favorite Family Picture
+            </figcaption>
+          </figure>
+        </section>
       </li>
       <li class="family-name">
         <h2>Family</h2>
@@ -45,6 +45,14 @@
       </li>
     </ol>
     <ol id="wife" class="family-member">
+      <li class="family-image">
+        <figure>
+          <img src="../assets/images/cruise.jpg" alt="Suppose to be a picture of wife and I on a cruise" />
+          <figcaption>
+            My Wife
+          </figcaption>
+        </figure>
+      </li>
       <li class="family-name">
         <h2>Sarah</h2>
         <h3>The Wife</h3>
@@ -67,6 +75,14 @@
     </ol>
     <!--______________________________Adeline______________________________-->
     <ol id="adeline" class="family-member">
+      <li class="family-image">
+        <figure>
+          <img src="../assets/images/adelinegaming.jpg" alt="Suppose to be and image of my beautiful daughter" />
+          <figcaption>
+            My First-Born Daughter
+          </figcaption>
+        </figure>
+      </li>
       <li class="family-name">
         <h2>Adeline</h2>
         <h3>First Born</h3>
@@ -91,21 +107,21 @@
           <li>Favorite Toy: Blankets!</li>
         </ul>
       </li>
+    </ol>
+    <ol id="lil-bean" class="family-member">
       <li class="family-image">
         <figure>
-          <img src="../assets/images/adelinegaming.jpg" alt="../assets/images/adeline" />
+          <img src="../assets/images/notdamomma.jpg" alt="Picture of the Lil Bean" />
           <figcaption>
-            My First-Born Daughter
+            My Second Not Born Bean
           </figcaption>
         </figure>
       </li>
-    </ol>
-    <ol id="lil-bean" class="family-member">
       <li class="family-name">
         <h2>Lil Bean</h2>
         <h3>Second One Not Born Yet</h3>
         <p>
-          I have started calling the baby the lil bean.  Currently the size of an avacodo
+          I have started calling the baby dot.  Currently the size of an avacodo
           or something along those "What fruit or veggie is your kid!"  Gender is still not known.
         </p>
       </li>
@@ -122,16 +138,13 @@
           <li>Favorite Toy: Umbillia Cord</li>
         </ul>
       </li>
-      <li class="family-image">
-        <figure>
-          <img src="../assets/img/avacodo" alt="Picture of the Lil Bean" />
-          <figcaption>
-            My Second Not Born Bean
-          </figcaption>
-        </figure>
-      </li>
     </ol>
-    <footer> <small> TREL Chicago </small></footer>
+    <footer>
+      <small id="footer">
+        TREL Chicago
+        <a href="previous_versions">Previous Versions</a>
+      </small>
+    </footer>
     <script src="../assets/js/site.js"></script>
   </body>
 </html>

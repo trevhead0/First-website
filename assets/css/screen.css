@@ -34,14 +34,14 @@ html {
   line-height: 1.277em; /* 23px / 18px = 1.277em... */
   background-color: #272727;
   padding: 1.277em 1em /* 23 / 18px = 1.277... half a line space inbetween*/;
-  color:#ff652f;
+  color: #ff652f;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 h1 {
   /*Changed Smaller size for smaller browser, might enlarge for larger screens*/
-  font-size:4.236em; /*76.244px / 18 px = 4.236...*/
+  font-size: 4.236em; /*76.244px / 18 px = 4.236...*/
   text-align: center;
   text-decoration: underline;
   /*font-size: 2.618em; /* 47.123 / 18 = 2.25 */
@@ -51,7 +51,7 @@ h2 {
   /*font-size: 2.618em; /* 47.123 / 18 = 2.25 */
   font-size: 1.618em; /* 29.124 / 18 = 1.618 */
   line-height: 1.309em; /* 61.685 / 47.123 = 1.309 */
-  color:#84ceeb;
+  color: #84ceeb;
 }
 h3 {
   /*font-size: 1.618em; /* 29.124 / 18 = 1.618 */
@@ -63,7 +63,7 @@ p {
   padding-bottom: 1.277em; /* 23 / 18px = 1.277... */
 }
 
-header,footer{
+header, footer {
   background: #747474;
 }
 ul, ol {
@@ -80,7 +80,7 @@ ol {
 }
 li {
   padding-bottom: 0.6111em; /* 11 / 18 = 0.6111 */
-  margin:.6111em;
+  margin: 0.6111em;
 }
 figcaption {
   text-align: center;
@@ -92,33 +92,33 @@ video {
   width: 100%;
 }
 
-a:link{
-  color:#14a76c;
+a:link {
+  color: #14a76c;
 }
-a:visited{
-  color:#ffe400;
+a:visited {
+  color: #ffe400;
 }
 /* ========== Layout ========== */
 /* Layout (id selectors; width/height, position, flexbox, grid)*/
 
-#resume-name{
-  font-size:4.236em; /*76.244px / 18 px = 4.236...*/
+#resume-name {
+  font-size: 4.236em; /*76.244px / 18 px = 4.236...*/
 }
 
-#header, #footer{
+#header, #footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
-#navigation{
+#navigation {
   align-self: flex-end;
 }
-#navigation a:hover{
+#navigation a:hover {
   background-color: green;
 }
-#contact{
-  display:flex;
+#contact {
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -129,14 +129,14 @@ a:visited{
   grid-template-rows: auto;
   list-style-type: square;
 }
-#photo-gallery{
-  display:grid;
+#photo-gallery {
+  display: grid;
   grid-template-columns: repeat(5,1fr);
   grid-column-gap: 1em;
   grid-template-rows: auto;
 }
 /*This is side project inside of project, meant to be a fun lil easter egg*/
-#chessboard{
+#chessboard {
   background-color: red;
   padding: 1em 1em;
   max-height: 50vw;
@@ -149,7 +149,7 @@ a:visited{
 }
 /* ========== Module ========== */
 /* Module/Modular Section (class or descedent selectors; repeating specific styles) */
-.location{
+.location {
   padding-bottom: 2em/**/;
 }
 
@@ -161,25 +161,24 @@ a:visited{
   text-decoration: underline;
 }
 
-.experience-description li{
-  padding:.6111111em;
+.experience-description li {
+  padding: 0.6111111em;
 }
-.pg-content{
-  width:100%;
+.pg-content {
+  width: 100%;
 
 }
 
 
-.focus{
-  order:0;
+.focus {
+  order: 0;
   grid-column-start: 1;
   grid-column-end: 6;
 }
-.nonfocus{
-  order:2;
-  height:10em;
-  width:auto;
-background-color: red;
+.nonfocus {
+  order: 2;
+  height: 10em;
+  width: auto;
 }
 /* ========== State ========== */
 /* State (repeat the structure above; media queries, JavaScript-dependent styles) */
@@ -196,19 +195,19 @@ background-color: red;
   .family-image, .family-name {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin:auto;
+    margin: auto;
     /*background-color: orange;*/
   }
 }
 @media screen and (min-width: 700px/*700px/ 18px = 38.8888em*/) {
-  ol, #header,#footer{
+  ol, #header, #footer {
     max-width: 38.8888em ;
     margin: auto;
   }
 }
 
 @media screen and (min-width: 900px/*900px / 18px =50em*/) {
-  ol, #header, #footer{
+  ol, #header, #footer {
     max-width: 50em/*I like this as max width due to text lining up;*/
   }
 }
